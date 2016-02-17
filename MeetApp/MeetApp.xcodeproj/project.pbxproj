@@ -12,6 +12,12 @@
 		2905A7021C6B9E100097560C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2905A7001C6B9E100097560C /* Main.storyboard */; };
 		2905A7041C6B9E100097560C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2905A7031C6B9E100097560C /* Assets.xcassets */; };
 		2905A7071C6B9E100097560C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2905A7051C6B9E100097560C /* LaunchScreen.storyboard */; };
+		29FFFDF41C7434370081CE4E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFFDF31C7434370081CE4E /* Colors.swift */; };
+		29FFFDF61C7434660081CE4E /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFFDF51C7434660081CE4E /* HolderView.swift */; };
+		29FFFDF91C74349F0081CE4E /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFFDF81C74349F0081CE4E /* OvalLayer.swift */; };
+		29FFFDFB1C7434B10081CE4E /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFFDFA1C7434B10081CE4E /* TriangleLayer.swift */; };
+		29FFFDFD1C7434C10081CE4E /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFFDFC1C7434C10081CE4E /* RectangleLayer.swift */; };
+		29FFFDFF1C7434CF0081CE4E /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFFDFE1C7434CF0081CE4E /* ArcLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		2905A7031C6B9E100097560C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2905A7061C6B9E100097560C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2905A7081C6B9E100097560C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29FFFDF31C7434370081CE4E /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		29FFFDF51C7434660081CE4E /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
+		29FFFDF81C74349F0081CE4E /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
+		29FFFDFA1C7434B10081CE4E /* TriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleLayer.swift; sourceTree = "<group>"; };
+		29FFFDFC1C7434C10081CE4E /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
+		29FFFDFE1C7434CF0081CE4E /* ArcLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 		2905A6FB1C6B9E100097560C /* MeetApp */ = {
 			isa = PBXGroup;
 			children = (
+				29FFFDF21C7433CE0081CE4E /* Utilities */,
+				29FFFDF01C7433AA0081CE4E /* Loder View */,
 				2905A6FC1C6B9E100097560C /* AppDelegate.swift */,
 				2905A6FE1C6B9E100097560C /* ViewController.swift */,
 				2905A7001C6B9E100097560C /* Main.storyboard */,
@@ -62,6 +76,34 @@
 				2905A7081C6B9E100097560C /* Info.plist */,
 			);
 			path = MeetApp;
+			sourceTree = "<group>";
+		};
+		29FFFDF01C7433AA0081CE4E /* Loder View */ = {
+			isa = PBXGroup;
+			children = (
+				29FFFDF71C7434820081CE4E /* Layers */,
+				29FFFDF51C7434660081CE4E /* HolderView.swift */,
+			);
+			name = "Loder View";
+			sourceTree = "<group>";
+		};
+		29FFFDF21C7433CE0081CE4E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				29FFFDF31C7434370081CE4E /* Colors.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		29FFFDF71C7434820081CE4E /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				29FFFDF81C74349F0081CE4E /* OvalLayer.swift */,
+				29FFFDFA1C7434B10081CE4E /* TriangleLayer.swift */,
+				29FFFDFC1C7434C10081CE4E /* RectangleLayer.swift */,
+				29FFFDFE1C7434CF0081CE4E /* ArcLayer.swift */,
+			);
+			name = Layers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FFFDF91C74349F0081CE4E /* OvalLayer.swift in Sources */,
+				29FFFDF61C7434660081CE4E /* HolderView.swift in Sources */,
+				29FFFDFD1C7434C10081CE4E /* RectangleLayer.swift in Sources */,
 				2905A6FF1C6B9E100097560C /* ViewController.swift in Sources */,
+				29FFFDFF1C7434CF0081CE4E /* ArcLayer.swift in Sources */,
+				29FFFDFB1C7434B10081CE4E /* TriangleLayer.swift in Sources */,
+				29FFFDF41C7434370081CE4E /* Colors.swift in Sources */,
 				2905A6FD1C6B9E100097560C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +333,7 @@
 				2905A70D1C6B9E100097560C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
